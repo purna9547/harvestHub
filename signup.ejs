@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("I.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .container {
+      background-color: #e1de1098;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 90%;
+      max-width: 500px; 
+    }
+    h1 {
+      text-align: center;
+      color: solid black;
+      /* color: solid rgb(122, 57, 79); */
+      /* color: #333; */
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+   
+    label {
+  margin-bottom: 6px;
+  color: black; 
+}
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #10ba10;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .dropdown-select {
+      padding: 10px;
+      border: 1px solid #10ba10;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #fff; 
+      
+    }
+    .dropdown-options {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      z-index: 1;
+    }
+    /* .dropdown-options a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    } */
+    .dropdown-options a:hover {
+      background-color: #f4f4f4;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      text-align: center;
+      margin-top: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Signup</h1>
+    <form action="/signup" method="post">
+      <div class="dropdown">
+        <label for="userType">User Type:</label>
+        <div class="dropdown-select" onclick="toggleDropdown()" id="dropdownSelect">Select User Type</div>
+        <div class="dropdown-options" id="dropdownOptions">
+          <a href="#" onclick="selectOption('Consumer')">Consumer</a>
+          <a href="#" onclick="selectOption('Wholesaler')">Wholesaler</a>
+        </div>
+        <input type="hidden" id="userType" name="userType" required />
+      </div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <button type="submit">Signup</button>
+    </form>
+    <a href="/login">Login</a>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      var dropdownOptions = document.getElementById("dropdownOptions");
+      dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
+    }
+
+    function selectOption(option) {
+      document.getElementById("dropdownOptions").style.display = "none";
+      document.getElementById("dropdownSelect").innerHTML = option;
+      document.getElementById("userType").value = option;
+    }
+  </script>
+</body>
+</html>
