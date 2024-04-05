@@ -24,7 +24,7 @@
     background-color: #2e8336df;
     color: #fff;
     padding: 10px 0;
-    display: flex; /* Add this */
+    display: flex; 
     justify-content: space-between;
   }
   
@@ -96,7 +96,7 @@
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); */
   }
   
   .btn:hover {
@@ -126,6 +126,7 @@
     background-color: #f9f9f9;
     padding: 50px 0;
   }
+  
   
   .products {
     background-color: #fff;
@@ -169,7 +170,7 @@
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   
   .footer-links {

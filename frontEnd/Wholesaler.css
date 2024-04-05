@@ -20,30 +20,42 @@
   }
   
   .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #2e8336df;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
   }
   
   .logo-container {
-    width: 60px; 
-    height: 60px; 
-    overflow: hidden;
-    border-radius: 50%; 
+    display: flex;
+    align-items: center;
   }
   
   .logo {
-    width: 100%;
-    height: auto;
-    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 1px;
   }
+  
+  .harv h1 {
+    font-family: cursive;
+    font-size: 30px;
+    margin-left: 9px;
+    margin-bottom: 1px;
+  }
+  
   .nav-menu {
     float: right;
   }
   
   .nav-menu li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 19px;
+    font-size: 20px;
   }
   
   .nav-menu li:first-child {
@@ -54,21 +66,37 @@
     color: #fff;
     text-decoration: none;
   }
-  
-  .consumers {
-    padding: 50px 0;
+  .nav-menu li a:hover{
+    color: black;
+    text-decoration:overline;
   }
   
-  .consumers h1 {
-    font-size: 36px;
+  .Wholesaler {
+    padding: 50px 0;
+  
+  }
+  
+  .Wholesaler h1 {
+    font-size: 50px;
+    font-family: cursive;
     margin-bottom: 30px;
     text-align: center;
   }
   
   .profile {
-    margin-bottom: 40px;
-    text-align: center;
+    width: calc(33.33% - 40px); 
+    display: inline-block; 
+    margin-right: 30px;
+    margin-bottom: 30px;
+    vertical-align: top; 
+    text-align: center; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
   }
+  
   
   .profile-avatar {
     width: 150px;
@@ -81,7 +109,7 @@
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   
   .footer-links {
