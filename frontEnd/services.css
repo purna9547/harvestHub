@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+}
 .logo-container {
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ body {
     transition: transform 0.3s ease-in-out;
     width: calc(50% - 40px); 
     max-width: 300px; 
-
+}
 .service:nth-child(3n) {
     margin-right: 0; 
 }
@@ -132,24 +132,24 @@ body {
 
 
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .footer-links {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
 }
