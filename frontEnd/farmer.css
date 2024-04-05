@@ -96,7 +96,9 @@
     transition: transform 0.3s ease-in-out; 
   }
   
-  
+  .farmer:hover {
+    transform: translateY(-5px);
+  }
   .farmer-avatar {
     width: 150px;
     height: 150px;
