@@ -1,0 +1,165 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+   
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    background-color: #2e8336df;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .logo_img{
+    /* display:inline-block; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+   
+  }
+  
+.nav-menu {
+    float: right;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-menu li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-menu li a:hover{
+    color: black;
+    text-decoration:overline;
+  }
+  .hero {
+    background-image: url('bg.png');
+  
+	background-position: center;
+    background-size: cover;
+    color: #070707;
+    text-align: center;
+    padding: 200px 0;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .harv h1{
+    font-family: cursive;
+    font-size: 30px;
+    display: inline;
+    
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #61ff66da;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #199623bb;
+  }
+  
+  .features {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .feature {
+    width: 30%;
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .farmers {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .products {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .newsletter {
+    background-color: #2e8336df;
+    /* #0b5c23b5; */
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .newsletter form {
+    margin-top: 20px;
+  }
+  
+  .newsletter input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #61ff66da;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+  }
