@@ -2,154 +2,135 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     background-color: #f9f9f9;
-}
-
-.container {
+  }
+  
+  .container {
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     background-color: #2e8336df;
-    color: #fff;
-    padding: 10px 0;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  }
+  
+  .logo-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 50px;
     height: 50px;
     overflow: hidden;
     border-radius: 50%;
     margin-right: 1px;
-}
-
-.harv h1 {
+  }
+  
+  .harv h1 {
     font-family: cursive;
     font-size: 30px;
     margin-left: 9px;
     margin-bottom: 1px;
-}
-
-.nav-menu {
+  }
+  
+  
+  .nav-menu {
     float: right;
-}
-
-.nav-menu li {
+  }
+  
+  .nav-menu li {
     display: inline-block;
-    margin-left: 19px;
-    font-size: 20px;
-}
-
-.nav-menu li:first-child {
+    margin-left: 20px;
+  }
+  
+  .nav-menu li:first-child {
     margin-left: 0;
-}
-
-.nav-menu li a {
+  }
+  
+  .nav-menu li a {
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
-}
-
-.nav-menu li a:hover {
+  }
+  .nav-menu li a:hover{
     color: black;
-    text-decoration: overline;
-}
-
-.services {
+    text-decoration:overline;
+  }
+  
+  .services {
     padding: 50px 0;
-    text-align: center; 
-}
-
-.services h1 {
+    text-align: center;
+  }
+  
+  .services h1 {
     font-size: 50px;
     font-family: cursive;
     margin-bottom: 30px;
     text-align: center;
-}
-
-.services .container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-}
-
-.service {
+  }
+  
+  
+  .service {
     margin: 0 20px 40px; 
     padding: 20px;
+    height: 300px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    width: calc(50% - 40px); 
-    max-width: 300px; 
-}
-.service:nth-child(3n) {
-    margin-right: 0; 
-}
-
-.service:hover {
+    width: calc(30.33% - 40px); 
+    display: inline-block;
+    margin-right: 30px; 
+    vertical-align: top; 
+  }
+  
+  .service:hover {
     transform: translateY(-5px);
-}
-
-.service h2 {
+  }
+  
+  .service h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
-}
-
-.service p {
+    text-align: center;
+  }
+  
+  .service p {
     margin-bottom: 10px;
     color: #666;
-}
-
-.services {
-    padding: 50px 0;
-    text-align: center; 
-    margin-top: 0; 
-}
-
-.services .container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    margin-bottom: auto; 
-}
-
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.footer-links {
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.social-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a,
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
