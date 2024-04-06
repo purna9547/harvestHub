@@ -72,7 +72,7 @@
     color: #fff;
     text-decoration: none;
   }
-  .nav-menu li a:hover{
+  .nav-menu li a:hover ,.nav-menu li a:active{
     color: black;
     text-decoration:overline;
   }
