@@ -21,12 +21,20 @@
   }
   
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
     background-color: #2e8336df;
     color: #fff;
     padding: 10px 0;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-  }
+    align-items: center; 
+    margin-bottom: 30px;
+    
+}
   
   .logo_img{
     /* display:inline-block; */
