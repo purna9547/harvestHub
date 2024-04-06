@@ -101,7 +101,8 @@
   .about p {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #fff;
+/*     color: #fff; */
+      color: #141010; 
   }
   
   .footer {
