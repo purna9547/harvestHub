@@ -34,12 +34,17 @@
   }
 
   .navbar {
-  background-color: #2e8336df;
-  color: #fff;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Center items vertically */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: #2e8336df;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .logo-container {
@@ -82,6 +87,8 @@
   
   .about {
     padding: 50px 0;
+    background-image: url("bg12.jpg");
+    margin-top: 100px;
   }
   
   .about h1 {
