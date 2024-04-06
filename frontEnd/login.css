@@ -115,6 +115,7 @@ body {
 	border: 2px solid rgb(47, 5, 233);
 	display: inline-block;
 	background-color: #007bff;
+	
 	padding: 9px 10px 9px 10px;
 	border-radius: 8px;
 	cursor: pointer;
@@ -127,6 +128,7 @@ body {
 
 .forgot-password:hover {
 	background-color: #0056b3;
+	background: linear-gradient(#006992, #520ee6);
 }
 
 /* Add this style for the "Submit" button */
@@ -149,7 +151,8 @@ body {
 }
 
 .submit-button:hover {
-	background-color: #0056b3;
+	/* background-color: #0056b3; */
+	background: linear-gradient(#006992, #520ee6);
 }
 .new-user-text{
 	font-size: 17px;

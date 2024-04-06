@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+
+body{
+    font-family: cursive, sans-serif;
+	/* background-color: #f9f9f9; */
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url("I.jpg");
+	background-size: cover;
+	background-position: center;
+    
+}
+div.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+div.register{
+    background-color: rgba(215, 217, 169, 0.5);
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: #101010;
+}
+form{
+    margin: 20px;
+}
+lebel{
+    font-family: cursive;
+    font-size: 18px;
+    font-style: italic;
+}
+input#name{
+    width: 344px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.6);
+}
+input#name2{
+    width: 161px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.6);
+}
+input#password{
+    width: 344px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.6);
+}
+input#confirmPassword{
+    width: 344px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.6);
+}
+input#submit{
+    display: flex;
+    width: 240px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: rgba(250,100,0,0.8);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+input#submit:hover{
+    color: #fff;
+    background-color: #101010;
+}
+
+label,span,h2{
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    font-family: cursive;
+    font-weight:1000;
+}

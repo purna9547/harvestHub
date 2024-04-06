@@ -1,195 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
     <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+   
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    html {
-        height: 100%;
-    }
-    body {
-        font-family: cursive, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-image: url("I.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-    .login-box {
-        width: 400px;
-        padding: 40px;
-        box-sizing: border-box;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-        border-radius: 10px;
-        opacity: 0;
-        animation: fadeInUp 0.5s forwards, scaleUp 0.3s 0.5s forwards;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #d0d0d098;
-        border-radius: 8px;
-        padding: 20px;
-        width: 400px;
-        min-height: fit-content;
-    }
-    @keyframes fadeInUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    @keyframes scaleUp {
-        from {
-            transform: scale(0.9);
-        }
-        to {
-            transform: scale(1);
-        }
-    }
-    .login-box h2 {
-        margin: 0 0 30px;
-        padding: 0;
-        color: #060606;
-        text-align: center;
-    }
-    .select-box {
-        position: relative;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .select-box select {
-        width: 100%;
-        padding: 12px;
-        font-family: cursive;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        background-color: rgb(255, 255, 255);
-        margin-bottom: 10px;
-        color: #0f0f0f;
-        transition: background-color 0.2s, transform 0.2s;
-    }
-    .user-box {
-        position: relative;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .user-box input[type="text"],
-    .user-box input[type="password"] {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-        font-family: cursive;
-        border: none;
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        margin-bottom: 20px;
-        color: #070000;
-        transition: background-color 0.2s, transform 0.2s;
-    }
-    .user-box label {
-        color: #fff;
-        display: block;
-        margin-bottom: 5px;
-        transition: 0.2s;
-    }
-    .user-box input[type="text"]:focus,
-    .user-box input[type="password"]:focus,
-    .user-box input[type="text"]:valid,
-    .user-box input[type="password"]:valid {
-        background-color: #e1e1e1;
-    }
-    .user-box input[type="text"]:focus~label,
-    .user-box input[type="password"]:focus~label,
-    .user-box input[type="text"]:valid~label,
-    .user-box input[type="password"]:valid~label {
-        top: -10px;
-        left: 10px;
-        font-size: 12px;
-        font-family: cursive;
-        color: #007bff;
-    }
-    .forgot-password {
-        display: inline-block;
-        text-align: right;
-        color: #030303;
-        text-decoration: none;
-        font-size: 17px;
-        margin-top: 5px;
-        transition: color 0.2s;
-        display: inline-block;
-        background-color: #007bff;
-        padding: 13px 12px 13px 12px;
-        border-radius: 5px;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        position: relative;
-        margin-left: 20px;
-    }
-    .forgot-password:hover {
-        background-color: #0056b3;
-    }
-    .login-box a:last-child {
-        margin-top: 20px;
-    }
-    .submit-button {
-        background-color: #007bff;
-        color: #070707;
-        padding: 12px 48px 12px 48px;
-        border: none;
-        border-radius: 5px;
-        font-family: cursive;
-        font-size: 17px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-    }
-    .submit-button:hover {
-        background-color: #0056b3;
-    }
-    .new-user-text {
-        font-size: 17px;
-        color: rgb(15, 15, 15);
-    }
-</style>
+
 <body>
-    <div class="login-box">
-        <h2>Signup</h2>
-        <form action="signup" method="post">
-            <div class="select-box">
-                <select id="user-type" name="user-type" required>
-                    <option value="">Select User Type</option>
-                    <option value="Wholesaler">Wholesaler</option>
-                    <option value="Farmer">Farmer</option>
-                </select>
-            </div>
-            <div class="user-box">
-                <input type="text" id="username" name="uname" placeholder="Enter your username" required>
-            </div>
-            <div class="user-box">
-                <input type="password" id="password" name="upass" placeholder="Enter your password" required>
-            </div>
-            <input type="submit" class="submit-button"></input>
-            <a href="forgot.html" class="forgot-password">Forgot Password?</a>
-            <br><br>
-            <div class="user-box">
-                <a href="#" class="new-user-text" id="new-user-text">New user?</a>
-                <a href="#" class="new-user-text" id="new-user-text">Login</a>
-            </div>
+    <div class="main">
+        <div class="register">
+        <h2>Sign Up</h2>
+        <form>
+            <!-- <label>Enter your name</label> -->
+            <!-- <br> -->
+            <input type="text" name="fname" id="name2" placeholder="First name" required>
+            <input type="text" name="lname" id="name2" placeholder="Last name">
+            <br>
+            <!-- <label>Email : </label> -->
+            <br>
+            <input type="email" name="email" id="name" placeholder="Enter your Email" required>
+            <br>
+            <!-- <label>Phone Number</label> -->
+            <br>
+            <input type="number" name="phoneNumber" id="name" placeholder="Enter your phone number" required>
+            <br>
+            <!-- <label>Password : </label> -->
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
+            <br>
+            <!-- <label>Confirm Password : </label> -->
+            <br>
+            <input type="password" name="confirm password" id="confirmPassword" placeholder="Enter Confirm Password "  requiredonsubmit="return validateForm()">
+            <br>
+            <br>
+            <input type="submit" value="submit" name="submit" id="submit">
         </form>
+        </div>
     </div>
 </body>
+<script src="register.js"></script>
 </html>
