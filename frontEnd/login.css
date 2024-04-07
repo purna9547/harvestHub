@@ -95,7 +95,7 @@ body {
 
 .user-box input {
 	width: 100%;
-	padding: 12px;
+	padding: 10px;
 	font-size: 18px;
 	font-family: cursive;
 	border: none;
@@ -155,10 +155,11 @@ body {
 	background: linear-gradient(#006992, #520ee6);
 }
 .new-user-text{
+	margin-left:15px;
 	font-size: 17px;
 	color: rgb(15, 15, 15);
 }
-.new-user-text{
+.new-user-text {
 	margin-left: 30px;
 	margin-right: 65px;
 	text-decoration: none;
